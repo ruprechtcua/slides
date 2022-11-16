@@ -1,0 +1,811 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			.color-data {
+				background-color:rgb(32, 32, 78);
+				color: white;
+			}
+			.color-info {
+				background-color:rgb(1, 77, 73);
+				color: white;
+			}
+			.color-knowledge {
+				background-color:rgb(76, 77, 1);
+				color: white;
+			}
+			.color-wisdom {
+				background-color:rgb(77, 1, 1);
+				color: white;
+			}
+			.color-mystery {
+				background-color:rgb(59, 59, 59);
+				color: white;
+			}
+			.color-highlight {
+				background-color:rgb(228, 224, 0);
+				color: rgb(54, 54, 54);
+			}
+			.color-less {
+				background-color: #b1b1b1;
+				color: white;
+			}
+			.color-pond {
+				background-color:rgb(0, 110, 255);
+				color: white;
+			}
+			.color-galaxy {
+				background: -webkit-linear-gradient(160deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(255,0,247,1) 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+			.circle {
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				vertical-align: middle;
+				font-size: 32px;
+			}
+			.small {
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				font-size: 18px;
+			}
+			.tiny {
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				font-size: 12px;
+				display: inline-block;
+			}
+			.big {
+				width: 500px;
+				height: 500px;
+				line-height: 100px;
+				font-size: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides" >
+				<section data-background-color="#e6e6e6">
+					<section>
+						<h1 class="color-galaxy">why you are here</h1>
+						<div>understand the evolution of technology</div>
+					</section>
+					<section>
+						<h1 class="color-galaxy">what you get</h1>
+						<div>understanding of the power&nbsp;<span class="color-data"> data </span>&nbsp;holds</div>
+					</section>
+					
+				</section>
+				<section data-background-color="#404040">
+					<section>
+						<h1>Data vs information</h1>
+					</section>
+					<section>
+						<h1>Data</h1>
+						<ul>
+							<li>raw</li>
+							<li>unprocessed</li>
+							<li>unstructured</li>
+							<li>meaningless on it's own</li>
+						</ul>
+					</section>
+					<section>
+						<h1>Information</h1>
+						<ul>
+							<li>derived from data</li>
+							<li>processed</li>
+							<li>structured</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<h1>data</h1>
+						<table data-id="tabledata" class="color-data">
+							<tr class="fragment fade-right"><td>Shana</td><td>80%</td></tr>
+							<tr class="fragment fade-right"><td>Chase</td><td>94%</td></tr>
+							<tr class="fragment fade-right"><td>Ash</td><td>74%</td></tr>
+							<tr class="fragment fade-right"><td>Coco</td><td>79%</td></tr>
+						</table>
+
+					</section>
+					<section data-auto-animate>
+						<h1>information</h1>
+						<table data-id="tabledata" class="color-info">
+							<tr class="fragment fade-right"><td>Average score is <strong>81.75%</strong></td></tr>
+							<tr class="fragment fade-right"><td>Median score is <strong>84%</strong></td></tr>
+						</table>
+					</section>
+					<section>
+						<h1>pyramid</h1>
+						<div data-fragment-index="4" style="width: 20%; margin: 0 auto" class="fragment fade-up color-wisdom"> ? </div>
+						<div data-fragment-index="3" style="width: 40%; margin: 0 auto" class="fragment fade-up color-knowledge"> ? </div>
+						<div data-fragment-index="2" style="width: 60%; margin: 0 auto" class="fragment fade-up color-info"> information </div>
+						<div data-fragment-index="1" style="width: 80%; margin: 0 auto" class="fragment fade-up color-data"> data </div> 
+					</section>
+				</section>
+				
+				<section data-background-color="#e6e6e6">
+					<section>
+						<h1>long time ago</h1>
+						before world wide web (www) became popular
+					</section>
+					<section>
+						<div>User data is the primary focus of most companies</div>
+						<div class="fragment fade-right">because of &nbsp;<span class="color-mystery"> Consumer society </span> &nbsp;</div>
+					</section>
+					<section>
+						<h1>Advertisement</h1>
+						billboards, tv commercial, impressions
+					</section>
+					<section>
+						<img width="200px" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/GMA_Network_Logo_Vector.svg/800px-GMA_Network_Logo_Vector.svg.png">
+						<table data-id="tabledata" class="color-mystery">
+							<tr><td>5:30am</td><td>Unang Hirit</td><td class="fragment fade-right">👨‍🦳</td></tr>
+							<tr style="background-color:grey"><td>5:40pm</td><td>tv commercial</td><td></td></tr>
+							<tr><td>12:00pm</td><td>Eat Bulaga!</td><td class="fragment fade-right">👵</td></tr>
+							<tr style="background-color:grey"><td>12:15pm</td><td>tv commercial</td><td></td></tr>
+							<tr><td>6:30pm</td><td>24 Oras</td><td class="fragment fade-right">👨‍🦳👵👧👦</td></tr>
+							<tr><td>9:00pm</td><td>Korean series</td><td class="fragment fade-right">👧👦</td></tr>
+						</table>
+					</section>
+					<section>
+						<h1>Persona</h1>
+						👨‍🦳👵👧👦
+						TV viewers 
+					</section>
+					<section>
+						<h1>WEB 1.0</h1>
+						1989 to 2004
+					</section>
+					<section>
+						<img class="circle" src="data:image/jpeg;base64,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"/>
+						<h1>Tim Berners-Lee</h1>
+						invented World Wide Web (www) 1989
+					</section>
+					<section>
+						<h1>Static websites</h1>
+						read only, does not often change
+					</section>
+					<section>
+						<div>Examples of early Web 1.0</div>
+						<iframe width="400px" height="600px" src="http://edition.cnn.com/EVENTS/1996/year.in.review/"></iframe>
+						<iframe width="400px" height="600px" src="https://www.heavensgate.com/"></iframe>
+					</section>
+					<section>
+						<div>Early 2000s</div>
+						<img width="200px" src="https://static.wikia.nocookie.net/logo-timeline/images/d/da/Yahoo%21_1995_logo.svg/revision/latest?cb=20131218101810" /><br/>
+						<img width="180px" src="https://upload.wikimedia.org/wikipedia/commons/9/93/AOL_old_logo.svg" /><br/>
+						<img width="250px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Google_Adsense_logo.png/640px-Google_Adsense_logo.png" />
+					</section>
+					<section data-auto-animate>
+						year 2000-2003
+						<h1>Static user data</h1>
+						<table data-id="staticdata" class="color-data">
+							<tr class="fragment fade-right"><td>Name</td><td>Joboy Santos</td></tr>
+							<tr class="fragment fade-right"><td>Birthday</td><td>1st Jan 2008</td></tr>
+							<tr class="fragment fade-right"><td>Location</td><td>Manila</td></tr>
+							<tr class="fragment fade-right"><td>Gender</td><td>Male</td></tr>
+						</table>
+					</section>
+					<section data-auto-animate>
+						year 2000-2003
+						<h1>static user info</h1>
+						<table data-id="staticdata" class="color-info">
+							<tr class="fragment fade-right"><td>Teenager in school</td></tr>
+							<tr class="fragment fade-right"><td>Tropical climate</td></tr>
+							<tr class="fragment fade-right"><td>Filipino with spanish origin</td></tr>
+						</table>
+					</section>
+					<section>
+						<h1>pyramid</h1>
+						<div data-fragment-index="3" style="width: 40%; margin: 0 auto" class="fragment fade-up color-knowledge"> knowledge </div>
+						<div data-fragment-index="2" style="width: 60%; margin: 0 auto" class="fragment fade-up color-info"> information </div>
+						<div data-fragment-index="1" style="width: 80%; margin: 0 auto" class="fragment fade-up color-data"> data </div> 
+					</section>
+					<section data-auto-animate>
+						<h1>knowledge</h1>
+						👨‍🦱 JOBOY
+						<table data-id="staticdata" class="color-knowledge">
+							<tr class="color-info"><td>Teenager in school</td></tr>
+							<tr class="color-info"><td>Tropical climate</td></tr>
+							<tr class="color-info"><td>Filipino with spanish origin</td></tr>
+							<tr class="fragment fade-right color-mystery"><td>Compare similar traits with other accounts</td></tr>
+							<tr class="fragment fade-right color-knowledge"><td>Most likely loves Jollibee</td></tr>
+							<tr class="fragment fade-right color-knowledge"><td>Most likely do gaming</td></tr>
+						</table>
+					</section>
+					<section data-auto-animate>
+						<h1><span data-fragment-index="5" class="fragment fade-right">DIKW</span> <span class="fragment">pyramid</span></h1>
+						<div data-fragment-index="4" style="width: 20%; margin: 0 auto" class="fragment fade-up color-wisdom"> wisdom </div>
+						<div data-fragment-index="3" style="width: 40%; margin: 0 auto" class="color-knowledge"> knowledge </div>
+						<div data-fragment-index="2" style="width: 60%; margin: 0 auto" class="color-info"> information </div>
+						<div data-fragment-index="1" style="width: 80%; margin: 0 auto" class="color-data"> data </div> 
+					</section>
+					<section data-auto-animate>
+						<h1>wisdom</h1>
+						👨‍🦱 JOBOY
+						<table data-id="staticdata" class="color-wisdom">
+							<tr class="color-knowledge"><td>Most likely loves Jollibee</td></tr>
+							<tr class="color-knowledge"><td>Most likely do gaming</td></tr>
+							<tr class="fragment fade-right color-wisdom"><td><strong>IF</strong> searching for fast food</td></tr>
+							<tr class="fragment fade-right color-wisdom"><td><strong>THEN</strong> show Jollibee ads first</td></tr>
+							<tr class="fragment fade-right color-wisdom"><td><strong>IF</strong> searching for gadget</td></tr>
+							<tr class="fragment fade-right color-wisdom"><td><strong>THEN</strong> show gaming gadgets first</td></tr>
+						</table>
+					</section>
+					<section>
+						<h1>Flow of data</h1>
+						<span class="fragment fade-right">collect <div style="display:inline-block" class="color-data circle small">data</div></span>
+						<span class="fragment fade-right">process <div style="display:inline-block" class="color-info circle small">info</div></span>
+						<span class="fragment fade-right">analyze <div style="display:inline-block" class="color-knowledge circle small">knowledge</div></span>
+						<span class="fragment fade-right">apply <div style="display:inline-block" class="color-wisdom circle small">wisdom</div></span>
+					</section>
+					<section>
+						<h1>Specific Persona</h1>
+						<div class="fragment fade-in"><span class="fragment strike">👦</span><span class="fragment fade-right"><span data-id="p1">👨‍🦰</span><span data-id="p2">👱</span><span data-id="p3">👨‍🦱</span></span></div>
+					</section>
+					<section>
+						<h1>targeted ads</h1>
+						<span data-id="p1">👨‍🦰 KFC</span>
+						<span data-id="p2">👱 Mcdonalds</span>
+						<span data-id="p3">👨‍🦱 Jollibee</span>
+					</section>
+					<section>
+						<h1>WIN</h1>
+						<img src="https://media.giphy.com/media/igb9QJBRCxfxf33mWe/giphy.gif" />
+					</section>
+					<section>
+						<h1>How web works</h1>
+						<img class="fragment fade-in" width="600px" src="img/server.png"/>
+					</section>
+					<section>
+						<h1> server </h1>
+						<img class="fragment fade-right" width="190px" src="https://www.idgcdn.com.au/article/images/740x500/dimg/rkl-cpu-back-100880969-orig.jpgautowebp" />
+						<img class="fragment fade-right" width="200px" src="https://ds393qgzrxwzn.cloudfront.net/resize/m600x500/cat1/img/images/0/6sHAScxTS3.jpg" />
+						<img class="fragment fade-right" width="200px" src="https://storables.com/wp-content/uploads/2020/05/random-access-memory-1024x683.jpeg" />
+					</section>
+					<section>
+						<h1>Home server</h1>
+						<img src="https://qph.cf2.quoracdn.net/main-qimg-fba360ebcad48b8a2d570dde3c767e65-lq" />
+					</section>
+					<section>
+						<h1>Data center</h1>
+						<img src="https://www.cbre.com/cdn/-/media/project/cbre/dotcom/global/services/property-types/data-centers/data-center-solutions-hero-2760x828.jpg?iar=0&key=topichero-default&device=mobile"/>
+					</section>
+					<section>
+						<h1>Questions?</h1>
+						before we proceed
+					</section>
+				</section>
+				
+				<section data-background-color="#b4dbce">
+					<section>
+						<h1>WEB 2.0</h1>
+						2004 to present
+					</section>
+					<section>
+						<div>is user generated contents for users</div>
+						<img class="fragment fade-right" height="100px" src="https://www.freeiconspng.com/thumbs/youtube-logo-png/hd-youtube-logo-png-transparent-background-20.png" />
+						<img class="fragment fade-right" height="100px" src="https://www.edigitalagency.com.au/wp-content/uploads/TikTok-icon-glyph.png" />
+						<img class="fragment fade-right" height="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" />
+						<img class="fragment fade-right" height="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" />
+						<img class="fragment fade-right" height="100px" src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png" />
+						<img class="fragment fade-right" height="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" />
+						<img class="fragment fade-right" height="100px" src="https://www.redditinc.com/assets/images/site/reddit-logo.png" />
+						<img class="fragment fade-right" height="100px" src="https://www.iconpacks.net/icons/2/free-quora-logo-icon-2439-thumb.png" />
+					</section>
+					<section>
+						<div>User data is&nbsp;<span class="fragment fade-right color-mystery"> still </span>&nbsp;the primary focus of most companies</div>
+						<div class="fragment fade-right">with the help of &nbsp;<span class="color-mystery"> tech companies </span>&nbsp;</div>
+					</section>
+					<section data-auto-animate>
+						<div data-id="pond" style="margin: 0 auto" class="circle"><img width="150px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" /></div>
+					</section>
+					<section data-auto-animate>
+						<div data-id="pond" style="margin: 0 auto" class="color-pond circle big">
+							<br/>
+							<span class="fragment fade-in">🐠</span>
+							<span class="fragment fade-in">🐬</span>
+							<span class="fragment fade-in">🐟</span>
+							<span class="fragment fade-in">🦀</span>
+							<br/>
+							<span class="fragment fade-in">🐡</span>
+							<span class="fragment fade-in">🦈</span>
+							<span class="fragment fade-in">🦞</span>
+							<span class="fragment fade-in">🐚</span>
+							<br/>
+							<span class="fragment fade-in">🐋🐢🐙</span>
+							<br/><br/><span class="fragment fade-in">🎣</span><span class="fragment fade-in">🎣🎣🎣</span>
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div data-id="pond" style="margin: 0 auto" class="color-pond circle big">
+							<br/>
+							<span>👨‍🦱</span>
+							<span>🧒</span>
+							<span>👱</span>
+							<span>👩</span>
+							<br/>
+							<span>👩‍🦰</span>
+							<span>👨‍🦳</span>
+							<span>🧓</span>
+							<span>👴</span>
+							<br/>
+							<span>👵🧔👱‍♀️</span>
+							<br/><br/>🏛️🏛️🏛️🏛️</span>
+						</div>
+					</section>
+					<section data-auto-animate>
+						<h1>Joboy 👨‍🦱</h1>
+						<table data-id="tinytable">
+							<tr><td>
+								<div class="fragment fade-right" style="margin: 0 auto">
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+							</div>
+							<div class="fragment fade-right" style="margin: 0 auto">
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+							</div>
+							<div class="fragment fade-right" style="margin: 0 auto">
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+							</div>
+							<div class="fragment fade-right" style="margin: 0 auto">
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+								<div class="color-data circle tiny"></div>
+							</div>
+						</td>
+						</tr>
+					</table>
+					</section>
+					<section data-auto-animate>
+						<h1>Joboy 👨‍🦱</h1>
+						<table data-id="tinytable">
+							<tr><td>
+								<div style="margin: 0 auto">
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+								</div>
+								<div style="margin: 0 auto">
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+								</div>
+								<div style="margin: 0 auto">
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+								</div>
+								<div style="margin: 0 auto">
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+									<div class="color-info circle tiny"></div>
+								</div>
+							</td></tr>
+						</table>
+					</section>
+					<section data-auto-animate>
+						<h1>Joboy 👨‍🦱</h1>
+						<table data-id="tinytable">
+							<tr><td>
+								<div style="margin: 0 auto">
+									<div class="color-knowledge circle tiny"></div>
+									<div class="color-knowledge circle tiny"></div>
+									<div class="color-knowledge circle tiny"></div>
+									<div class="color-knowledge circle tiny"></div>
+								</div>
+								<div style="margin: 0 auto">
+									<div class="color-knowledge circle tiny"></div>
+									<div class="color-knowledge circle tiny"></div>
+									<div class="color-knowledge circle tiny"></div>
+									<div class="color-knowledge circle tiny"></div>
+								</div>
+								<div style="margin: 0 auto">
+									<div class="color-knowledge circle tiny"></div>
+									<div class="color-knowledge circle tiny"></div>
+									<div class="color-knowledge circle tiny"></div>
+									<div class="color-knowledge circle tiny"></div>
+								</div>
+								<div style="margin: 0 auto">
+									<div class="color-knowledge circle tiny"></div>
+									<div class="color-knowledge circle tiny"></div>
+									<div class="color-knowledge circle tiny"></div>
+									<div class="color-knowledge circle tiny"></div>
+								</div>
+							</td></tr>
+						</table>
+					</section>
+					<section data-auto-animate>
+						<h1>Joboy 👨‍🦱</h1>
+						<table data-id="tinytable">
+							<tr><td>
+								<div style="margin: 0 auto">
+									<div class="color-wisdom circle tiny"></div>
+									<div class="color-wisdom circle tiny"></div>
+									<div class="color-wisdom circle tiny"></div>
+								</div>
+								<div style="margin: 0 auto">
+									<div class="color-wisdom circle tiny"></div>
+									<div class="color-wisdom circle tiny"></div>
+									<div class="color-wisdom circle tiny"></div>
+								</div>
+								<div style="margin: 0 auto">
+									<div class="color-wisdom circle tiny"></div>
+									<div class="color-wisdom circle tiny"></div>
+									<div class="color-wisdom circle tiny"></div>
+								</div>
+								<div style="margin: 0 auto">
+									<div class="color-wisdom circle tiny"></div>
+									<div class="color-wisdom circle tiny"></div>
+									<div class="color-wisdom circle tiny"></div>
+								</div>
+							</td></tr>
+						</table>
+					</section>
+					<section data-auto-animate>
+						<h1>Real-time <span class="color-data">data</span></h1>	
+					</section>
+					<section data-auto-animate>
+						<h1>Real-time <span class="color-data">data</span></h1>	
+						<div>As humans are dynamic, we are evolving, transforming, and flows with the experience in life.				</div>
+					</section>
+					<section data-auto-animate>
+						<h1 data-id="emoticon-mature">👨‍🦱</h1>
+						<div class="fragment fade-right">🍗🍟🍝</div>
+					</section>
+					<section data-auto-animate>
+						<span>by tracking JOBOY's activities</span>
+						<table class="fragment fade-right" data-id="tinytable">
+							<tr><td>
+								<div style="margin: 0 auto">
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+								</div>
+								<div style="margin: 0 auto">
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+								</div>
+								<div style="margin: 0 auto">
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+								</div>
+								<div style="margin: 0 auto">
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+									<div class="color-data circle tiny"></div>
+								</div>
+								<div style="margin: 0 auto">
+									<div class="fragment fade-right color-data circle tiny"></div>
+									<div class="fragment fade-right color-data circle tiny"></div>
+									<div class="fragment fade-right color-data circle tiny"></div>
+									<div class="fragment fade-right color-data circle tiny"></div>
+									<div class="fragment fade-right color-data circle tiny"></div>
+									<div class="fragment fade-right color-data circle tiny"></div>
+									<div class="fragment fade-right color-data circle tiny"></div>
+									<div class="fragment fade-right color-data circle tiny"></div>
+									<div class="fragment fade-right color-data circle tiny"></div>
+									<div class="fragment fade-right color-data circle tiny"></div>
+									<div class="fragment fade-right color-data circle tiny"></div>
+									<div class="fragment fade-right color-data circle tiny"></div>
+								</div>
+								
+							</td></tr>
+						</table>
+					</section>
+					<section>
+						<h1>Likes 👍</h1>
+					</section>
+					<section>
+						<h1>Emotions </h1>						
+						👍❤️😂😯😢😡
+					</section>
+					<section>
+						<h1>Behaviours</h1>
+						<span class="fragment fade-right color-data">&nbsp;Scrolling&nbsp;</span>
+						<span class="fragment fade-right color-data">&nbsp;Pause on a certain feed&nbsp;</span>
+						<span class="fragment fade-right color-data">&nbsp;Lookup friend&nbsp;</span>
+					</section>
+					<section>
+						<h1>#hashtags</h1>
+						#school, #travel, #ootd
+					</section>
+					<section>
+						<h1>Marketplace</h1>
+						<img width="200px" src="data:image/png;base64,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" />
+					</section>
+					<section>
+						<h1>Groups</h1>
+						<img width="500px" src="https://digitallyup.com/wp-content/uploads/2019/04/facebook-groupss.png" />
+					</section>
+					<section>
+						<h1>Stories</h1>
+						<img src="https://womenlovetech.com/wp-content/uploads/2022/07/Ray-Ban-Stories-1200x900.jpg" />
+					</section>
+					<section>
+						<h1>💙 <br/>In a Relationship</h1>
+						<div class="fragment fade-right">parents, siblings, cousins</div>
+					</section>
+					<section>
+						<h1>Single sign on</h1>
+						<img width="300px" src="https://blog.dashlane.com/wp-content/uploads/2018/03/facebook-sign-in-button.png" />
+					</section>
+					<section>
+						Joboy's timeline
+					</section>
+					<section data-auto-animate>
+						<h1 data-id="emoticon-mature">🧔</h1>
+						<div class="fragment fade-right">🍓🍣🥦</div>
+					</section>
+					
+					<section data-auto-animate>
+						<h1 data-id="emoticon-mature">👨‍🦳</h1>
+						<div class="fragment fade-right">🥚🍵🍷</div>
+					</section>
+					<section data-auto-animate>
+						<h1 data-id="emoticon-mature">👴</h1>
+						<div class="fragment fade-right">💤🌍</div>
+					</section>
+					<section>
+						<h1>Where is the science in <span class="color-data">&nbsp;Data&nbsp;</span>?</h1>
+					</section>
+					<section data-auto-animate>
+						<div><span data-fragment-index="5" class="fragment fade-in color-mystery">&nbsp;how to scale these</span></div>
+						<div><span data-fragment-index="4" class="fragment fade-in color-mystery">&nbsp;how to&nbsp;</span>apply <span class="color-wisdom">&nbsp;wisdom&nbsp;</span></div>
+						<div><span data-fragment-index="3" class="fragment fade-in color-mystery">&nbsp;how to&nbsp;</span>analyze <span class="color-knowledge">&nbsp;knowledge&nbsp;</span></div>
+						<div><span data-fragment-index="2" class="fragment fade-in color-mystery">&nbsp;how to&nbsp;</span>process <span class="color-info">&nbsp;information&nbsp;</span></div>
+						<div><span data-fragment-index="1" class="fragment fade-in color-mystery">&nbsp;how to&nbsp;</span>collect <span class="color-data">&nbsp;data&nbsp;</span></div>						
+					</section>
+					<section>
+						<h1>Hardware</h1>
+						<img src="https://www.datocms-assets.com/34299/1658908746-custom-pc-path-primary-mobile.png"/>
+					</section>
+					<section>
+						<h1>Cloud services</h1>
+						<img width="250px" src="https://cbeitsolutions.com/wp-content/uploads/2019/11/amazon-aws-logo-transparent.png" />
+						<img width="300px" src="https://www.freecodecamp.org/news/content/images/2020/10/gcp.png" />
+						<img width="300px" src="https://onlinecoursetutorials.com/wp-content/uploads/2021/12/Microsoft-Azure-interview-questions-and-answers.png" />
+					</section>
+					<section>
+						<div style="margin: 0 auto">
+							<div class="color-wisdom circle tiny"></div>
+							<div class="color-wisdom circle tiny"></div>
+							<div class="color-wisdom circle tiny"></div>
+							<div class="color-wisdom circle tiny"></div>
+							<div class="color-wisdom circle tiny"></div>
+							<div class="color-wisdom circle tiny"></div>
+							<div class="color-wisdom circle tiny"></div>
+						</div>
+						<div data-fragment-index="4" class="fragment fade-in" style="margin: 0 auto; font-size:18px; width: 300px; color:white; background-color:rgb(77, 1, 1)" class="color-mystery"><span data-fragment-index="11" class="fragment fade-in color-highlight">&nbsp;3x&nbsp;</span> rules server </div>
+						<div style="margin: 0 auto">
+							<div class="color-knowledge circle tiny"></div>
+							<div class="color-knowledge circle tiny"></div>
+							<div class="color-knowledge circle tiny"></div>
+							<div class="color-knowledge circle tiny"></div>
+							<div class="color-knowledge circle tiny"></div>
+							<div class="color-knowledge circle tiny"></div>
+							<div class="color-knowledge circle tiny"></div>
+							<div class="color-knowledge circle tiny"></div>
+							<div class="color-knowledge circle tiny"></div>
+						</div>
+						<div data-fragment-index="3" class="fragment fade-in" style="margin: 0 auto; font-size:18px; width: 380px; color:white; background-color:rgb(76, 77, 1)" class="color-mystery"><span data-fragment-index="10" class="fragment fade-in color-highlight">&nbsp;5x&nbsp;</span>analyzer server</div>
+						<div style="margin: 0 auto">
+							<div class="color-info circle tiny"></div>
+							<div class="color-info circle tiny"></div>
+							<div class="color-info circle tiny"></div>
+							<div class="color-info circle tiny"></div>
+							<div class="color-info circle tiny"></div>
+							<div class="color-info circle tiny"></div>
+							<div class="color-info circle tiny"></div>
+							<div class="color-info circle tiny"></div>
+							<div class="color-info circle tiny"></div>
+							<div class="color-info circle tiny"></div>
+							<div class="color-info circle tiny"></div>
+						</div>
+						<div data-fragment-index="2" class="fragment fade-in" style="margin: 0 auto; font-size:18px; width: 450px; color:white; background-color:rgb(1, 77, 73)" class="color-mystery"><span data-fragment-index="9" class="fragment fade-in color-highlight">&nbsp;6x&nbsp;</span>processor server</div>
+						<div style="margin: 0 auto">
+							<div class="color-data circle tiny"></div>
+							<div class="color-data circle tiny"></div>
+							<div class="color-data circle tiny"></div>
+							<div class="color-data circle tiny"></div>
+							<div class="color-data circle tiny"></div>
+							<div class="color-data circle tiny"></div>
+							<div class="color-data circle tiny"></div>
+							<div class="color-data circle tiny"></div>
+							<div class="color-data circle tiny"></div>
+							<div class="color-data circle tiny"></div>
+							<div class="color-data circle tiny"></div>
+							<div class="color-data circle tiny"></div>
+							<div class="color-data circle tiny"></div>
+						</div>
+						<div data-fragment-index="1" class="fragment fade-in" style="margin: 0 auto; font-size:18px; width: 500px; color:white; background-color: rgb(32, 32, 78)" class="color-mystery"><span data-fragment-index="8" class="fragment fade-in color-highlight">&nbsp;6x&nbsp;</span>collector server</div>
+						<div data-fragment-index="5" class="fragment fade-in" style="margin: 0 auto; width: 600px">
+							<div class="color-less circle tiny"></div>
+							<div class="color-less circle tiny"></div>
+							<div class="color-less circle tiny"></div>
+							<div class="color-less circle tiny"></div>
+							<div class="color-less circle tiny"></div>
+							<div class="color-less circle tiny"></div>
+							<div class="color-less circle tiny"></div>
+							<div class="color-less circle tiny"></div>
+							<div class="color-less circle tiny"></div>
+							<div class="color-less circle tiny"></div>
+							<div class="color-less circle tiny"></div>
+							<div class="color-less circle tiny"></div>
+							<div class="color-less circle tiny"></div>
+							<div class="color-less circle tiny"></div>
+							<div class="color-less circle tiny"></div>
+							<div  data-fragment-index="6" class="fragment fade-in">
+								<div class="color-less circle tiny"></div>
+								<div class="color-less circle tiny"></div>
+								<div class="color-less circle tiny"></div>
+								<div class="color-less circle tiny"></div>
+								<div class="color-less circle tiny"></div>
+								<div class="color-less circle tiny"></div>
+								<div class="color-less circle tiny"></div>
+								<div class="color-less circle tiny"></div>
+								<div class="color-less circle tiny"></div>
+								<div class="color-less circle tiny"></div>
+								<div class="color-less circle tiny"></div>
+								<div class="color-less circle tiny"></div>
+								<div class="color-less circle tiny"></div>
+								<div class="color-less circle tiny"></div>
+								<div class="color-less circle tiny"></div>
+							</div>
+						</div>
+					</section>
+				</section>
+				<section data-background-color="rgb(240 233 223)">
+					<section>
+						<h1>the Bad parts 💩</h1>
+					</section>
+					<section>
+						<h1>Data breach🔓</h1>
+						<img src="https://live-production.wcms.abc-cdn.net.au/7930eb655dffa3876bd307f5f011fedd?impolicy=wcms_crop_resize&cropH=576&cropW=1023&xPos=0&yPos=0&width=862&height=485" />
+					</section>
+					<section>
+						<h1>Exploits user data</h1>
+						🍗🍟🍝
+					</section>
+					<section>
+						<h1>Data is forever</h1>
+						👨‍🦱🧔👨‍🦳👴
+					</section>
+				</section>
+				<section data-background-color="#f0dfdf">
+					<section>
+						<h1>the Good parts 💖</h1>
+					</section>
+					<section>
+						<h1>Just-in-time</h1>
+						content
+					</section>
+					<section>
+						<img src="https://www.verywellmind.com/thmb/luJzFVjtfBsCuRanONrj18FQxA4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/4136760-article-what-is-maslows-hierarchy-of-needs-5a97179aeb97de003668392e.png" />
+					</section>
+					<section>
+						<h1>Agritech</h1>
+						<img width="700px" src="https://www.mytechmag.com/wp-content/uploads/2022/03/agritech-trends-in-2022.jpg" />
+					</section>
+					<section>
+						<h1>Health Tech</h1>
+						<img src="https://www.techmagic.co/blog/content/images/2022/01/ar-Top-Health-Tech-Trends-for-2022-01.png" />
+					</section>
+				</section>
+				<section data-background-color="#e6e6e6">
+					<section>
+						<h1>what's next</h1>
+					</section>
+				</section>
+				
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				slideNumber: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
